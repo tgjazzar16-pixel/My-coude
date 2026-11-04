@@ -245,3 +245,23 @@ if __name__ == "__main__":
  root = tk.Tk()
  app = PaymentApp(root)
  root.mainloop()
+class PaymentDatabase:
+ def __init__(self):
+ self.cards = [
+ {"BIN": "424242", "Balance": 500.00, "Address": "123 Bank St..."}
+ ]
+def setup_browser(self):
+ options = webdriver.ChromeOptions()
+ options.add_argument("--headless") # تشغيل المتصفح في الخلفية
+ self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
+def auto_submit_payment(self, card_info, amount, target_url):
+ # 1. فتح الرابط
+ self.driver.get(target_url)
+ 
+ # 2. ملء البيانات
+ self.driver.find_element(By.ID, "cardNumber").send_keys(card_num)
+ self.driver.find_element(By.ID, "cardExpiry").send_keys(card_expiry)
+ 
+ # 3. الضغط على الزر
+ pay_button.click()
