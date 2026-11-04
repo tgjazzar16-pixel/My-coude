@@ -245,8 +245,3 @@ if __name__ == "__main__":
  root = tk.Tk()
  app = PaymentApp(root)
  root.mainloop()
-class PaymentDatabase:
- def __init__(self):
- self.cards = [
- {"BIN": "424242", "Balance": 500.00, "Address": "123 Bank St..."}
- ]
